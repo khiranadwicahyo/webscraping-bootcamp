@@ -10,13 +10,16 @@ Selamat datang di proyek `webscraping-bootcamp`, sebuah repositori latihan priba
 
 ## 📚 Struktur Pembelajaran
 
-### 1. `bs4/`
+### 1. `basic_tutorial_scrape.ipynb`
+contoh syntax dasar yang perlu diketahui untuk memulai melakukan scraping pada bs4 dan selenium.
+
+### 2. `bs4_basics.ipynb`
 Contoh penggunaan BeautifulSoup untuk scraping HTML statis seperti artikel, tabel, dan pagination.
 
-### 2. `selenium/`
+### 3. `selenium_basics.ipynb`
 Contoh scraping dari website dinamis, klik tombol, login otomatis, dan simpan ke CSV.
 
-### 3. `scrapy/`
+### 4. `scrapy`
 Coming soon: struktur proyek Scrapy dan spider sederhana.
 
 ---
