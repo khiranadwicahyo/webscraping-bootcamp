@@ -19,8 +19,8 @@ Dalam file jupyter ini saya akan memberikan Contoh penggunaan BeautifulSoup untu
 ### 3. `selenium_basics.ipynb`
 Dalam file Jupyter ini saya akan memberikan Contoh penggunaan selenium untuk scraping dari website dinamis, klik tombol, login otomatis, dan simpan ke CSV.
 
-### 4. `scrapy_basics.ipynb`
-*coming soon*
+### 4. `scrapy_project/`
+Dalam folder ini kita akan mencoba untuk setup scrapy sekaligus spiders untuk bisa melakukan crawling data. Crawling data yang akan dilakukan mulai dari mencoba melakukan crawling elemen sederhana hingga crwaling setiap halaman dan export ke format yang dibutuhkan.
 
 ---
 
@@ -59,7 +59,7 @@ pip install -r requirements.txt
 ```
 anda juga bisa memastikan package yang telah terinstall dengan cara:
 ```bash
-pip show list
+pip list
 ```
 jika setup telah selali anda bisa menon-aktifkan virtual environment dengan cara:
 ```bash
