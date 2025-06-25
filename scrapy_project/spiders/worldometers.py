@@ -41,9 +41,31 @@ class WorldometersSpider(scrapy.Spider):
         for row in rows:
             year = row.xpath('.//td[1]/text()').get()
             population = row.xpath('.//td[2]/text()').get()
+            yearly_change_percentage = row.xpath('.//td[3]/text()').get()
+            yearly_change_amount = row.xpath('.//td[4]/text()').get()
+            migrants_net = row.xpath('.//td[5]/text()').get()
+            median_age = row.xpath('.//td[6]/text()').get()
+            fertility_rate = row.xpath('.//td[7]/text()').get()
+            density = row.xpath('.//td[8]/text()').get()
+            urban_population_percentage = row.xpath('.//td[9]/text()').get()
+            urban_population_amount = row.xpath('.//td[10]/text()').get()
+            country_share_of_world_population = row.xpath('.//td[11]/text()').get()
+            world_population = row.xpath('.//td[12]/text()').get()
+            golbal_rank = row.xpath('.//td[13]/text()').get()
 
             yield {
                 "country": country,
                 "year": year,
                 "population": population,
+                "yearly change (%)": yearly_change_percentage,
+                "yearly_change_amount": yearly_change_amount,
+                "migrants (net)": migrants_net,
+                "median_age": median_age,
+                "fertility_rate": fertility_rate,
+                "density (P/km²)": density,
+                "urban pop (%)": urban_population_percentage,
+                "urban population": urban_population_amount,
+                "country share of world population": country_share_of_world_population,
+                "world_population": world_population,
+                "global_rank": golbal_rank,
             }
